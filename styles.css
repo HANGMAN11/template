@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.body{
+    font-family:'Ubuntu', sans-serif;
+
+}
+
+.header{
+    margin: 0px 0px 0px 0px;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.container{
+    margin: 0px 0px 0px 0px;
+}
+.number{
+    margin-right: 5px;
+    padding-bottom: 5px;
+}
+
+.header-line-1{
+    display: none;
+}
+
+.header-line{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+.nav-item{
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.icons{
+    margin: 0;
+    display: flex;
+}
+
+.icon-btn{
+    margin-right: 0;
+    padding: 18px;
+    align-items: center;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-weight: lighter;
+    cursor: pointer;
+    font-size: 26px;
+    border: 0.3px solid lightgray;
+    border-top: none;
+}
+
+.banner{
+    background-image: url(./src/header.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    background-position: center;
+}
+
+.banImg{
+   margin-top: 70vh;
+   margin-left: 10vh;
+   background-color: white;
+}
+
+
+.feature-container{
+    display: flex;
+    padding-left: 6px;
+    padding: 43px 33px 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature{
+    font-family:'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 13%;
+    padding-right: 35px;
+    padding-left: 35px
+    
+}
+
+.feature i{
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+.feature p{
+    white-space: normal
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img-change{
+    padding: 10px;
+}
+
+.img-change-2{
+    padding: 8px;
+}
+
+.card{
+    padding: 35px 0px 2px 0px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+    margin-left: 5px;
+}
+
+.cards h3{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cards p{
+    color: gray;
+    margin-top: 3px
+}
+
+.card-title h4{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.btn-container{
+    border-top: 1px solid grey;
+    margin: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
+}
+
+.choice-buttons{
+    display: flex;
+    border: none;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.choice-btn{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+.buyOrMore{
+    padding: 10px;
+    
+}
+
+.buy, .more{
+    border-radius: 20px;    
+    padding: 10px 20px 10px 20px;
+    font-family:'Ubuntu';
+    font-size: 14px;
+    box-shadow: 1px gray;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.buy{
+    background: linear-gradient( #8EE902, #4F9C2C);
+    color: white;
+}
+
+.text{
+    font-family:'Ubuntu', sans-serif;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.heading h3{
+    font-weight: bold;
+}
+
+.heading span{
+    font-weight: bold;
+    color: green;
+}
+
+.main-text{
+    padding-top: 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.main-text p{
+    color: gray;
+}
+
+.main-text p span{
+    color:black;
+}
+
+
+.catalog, .search{
+    border-radius: 20px;    
+    padding: 10px 20px 10px 20px;
+    font-family:'Ubuntu';
+    font-size: 14px;
+    box-shadow: 1px gray;
+    border: none;
+    margin: 10px 10px 10px 10px;
+    cursor: pointer;
+
+}
+
+.catalog{
+    background: linear-gradient( #8EE902, #4F9C2C);
+    color: white;
+}
+
+@media (max-width: 1479px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 620px){
+    
+    .header{
+        display: none;
+    }
+    .banner, .features-1, .cards, .text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0,0,0,0;
+    }
+
+    .text-btn-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .feature-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        
+    }
+    .feature{
+        margin-right: 15px;
+    }
+    .header-line-1 {
+        margin-bottom: 0;
+    margin-top: 0;
+    padding: 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    
+    
+    .icons-left,
+    .icons-right {
+        display: flex;
+        gap: 10px; 
+    }
+    
+    .main-icon {
+        flex-grow: 1; 
+        text-align: center; 
+    }
+    
+    .icons-left button,
+    .icons-right button {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 340px){
+    .banner{
+        display: none;
+    }
+}
