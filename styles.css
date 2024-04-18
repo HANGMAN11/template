@@ -53,6 +53,7 @@
 }
 
 .icon-btn{
+    position: relative;
     margin-right: 0;
     padding: 18px;
     align-items: center;
@@ -68,6 +69,70 @@
     border: 0.3px solid lightgray;
     border-top: none;
 }
+
+.badge{
+    font-family:'Ubuntu', sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 4px 7px 4px 7px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-right: 1px;
+    font-weight: bold;
+}
+
+
+.badge-2{
+    background-color: rgb(20, 254, 20);
+    color: white;
+    font-family:'Ubuntu', sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 4px 7px 4px 7px;
+
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-right: 1px;
+    font-weight: bold;
+}
+
+
+.badge-1{
+    font-family:'Ubuntu', sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 4px 7px 4px 7px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-right: 1px;
+    font-weight: bold;
+}
+
+
+
+
+
 
 .banner{
     background-image: url(./src/header.png);
@@ -120,23 +185,51 @@
 
 }
 
+.img-btn-container{
+    position: absolute;
+    top: 0;
+    right: -14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-left: 4px;
+    
+}
+
+.img-button{
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: white;
+    border: none;
+    font-size: 17px;
+}
+
+
 .img-change{
     padding: 10px;
+    position: relative;
+    display: inline-block; 
+    position: relative;
 }
 
 .img-change-2{
     padding: 8px;
+    position: relative;
 }
 
+
+
 .card{
-    padding: 35px 0px 2px 0px;
-    width: 20%;
+    padding: 0 0px 2px 0px;
+    width: 329px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: none;
+    border: 1px solid gray;
     margin-left: 5px;
+    flex: 0 0 auto;
 }
 
 .cards h3{    
@@ -158,9 +251,17 @@
 }
 
 .btn-container{
-    border-top: 1px solid grey;
     margin: 5px 0px 5px 0px;
     padding: 5px 0px 5px 0px;
+}
+
+.arrow-left, .arrow-right{
+    background-color: #fffffff1;
+    margin-right: -5px;
+    margin-left: 0px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    font-size: 35px;
 }
 
 .choice-buttons{
@@ -183,6 +284,8 @@
     font-weight: bold;
     font-family:'Ubuntu', sans-serif;
     font-size: 14px;
+    border: 1px solid gray;
+    padding: 13px 13px 13px 13px;
 }
 
 .buyOrMore{
@@ -265,11 +368,48 @@
     color: white;
 }
 
-@media (max-width: 1479px){
+@media (max-width: 1050px){
     .card-container{
         display: flex;
         flex-direction: column;
     }
+    .card{
+        margin-top: 10px
+    }
+    .arrow-left, .arrow-right{
+        display: none; 
+    }
+    
+    .feature-container{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin-left: 60px;
+    }
+    
+}
+
+@media(max-width: 910px){
+    .feature{
+        border: none;
+        width: 160px;
+        height: 160px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-right: 15px;
+        border: none;
+        background-color: rgb(236, 236, 236);
+    }
+    .feature-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        
+    }
+    
 }
 
 @media(max-width: 620px){
@@ -298,6 +438,8 @@
     }
     .feature{
         margin-right: 15px;
+        border: none;
+        background-color: rgb(236, 236, 236);
     }
     .header-line-1 {
         margin-bottom: 0;
@@ -314,8 +456,31 @@
     .icons-right {
         display: flex;
         gap: 10px; 
+        position: relative
     }
     
+    .small-badge, .small-badge-1, .small-badge-2{
+        font-family:'Ubuntu', sans-serif;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: rgb(6, 214, 6);
+        background-color: rgb(6, 214, 6);
+        font-size: 6px;
+        padding: 1;
+        left: 1;
+        top: 1;
+        margin-left: 20px;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        justify-content: center;
+        padding: 1px 4px 1px 4px;
+        margin-top: -4px;
+    }
+
+    
+
     .main-icon {
         flex-grow: 1; 
         text-align: center; 
@@ -326,6 +491,47 @@
         background-color: white;
         border: none;
         font-size: 20px;
+    }
+    .card{
+        flex-shrink: 0;
+    }
+    .feature{
+        border: none;
+        width: 160px;
+        height: 160px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+    }
+    .feature-container{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin-left: 10px;
+    }
+    .banner{
+        background-image: url(./src/header2.png);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        background-position: center;
+    }
+    .banImg{
+        margin-top: 70vh;
+        margin-left: 10vh;
+        background-color: white;
+     }
+    
+}
+
+@media(max-width: 540px) {
+    .feature{
+        width: 70px;
+        height: 100px;
+        font-size: 10px;
     }
 }
 
